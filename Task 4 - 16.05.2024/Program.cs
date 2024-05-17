@@ -39,32 +39,50 @@ namespace Task_4___16._05._2024
 
             #region Task 2
             //string word = "Code Academy";
-            //string lowerWord = word.ToLower();
             //int counter = 1;
             //bool flag = false;
-            //for (int i = 0; i < lowerWord.Length; i++)
+            //for (int i = 0; i < word.Length; i++)
             //{
-            //    if (lowerWord[i] == ' ')
-            //        continue;
-            //    else
+            //    if (word[i] != ' ')
             //    {
-            //        for (int j = 0; j < lowerWord.Length; j++)
+            //        for (int j = i + 1; j < word.Length; j++)
             //        {
 
-            //            if (lowerWord[i] == lowerWord[j])
+            //            if (word[i] == word[j])
             //            {
             //                counter++;
             //                flag = true;
             //            }
             //        }
-
             //        Console.WriteLine(word[i] + "  =  " + counter);
-            //        counter = 0;
+            //        counter = 1;
             //    }
-
             //}
             #endregion
 
+
+
+            #region Task 2 (Dərsdən sonra yazdığım)
+            //string word = "Code Academy";
+            //bool[] flag = new bool[word.Length];
+            //int counter = 1;
+            //for (int i = 0; i < word.Length; i++)
+            //{
+            //    if (word[i] != ' ' && !flag[i])
+            //    {
+            //        for (int j = i + 1; j < word.Length; j++)
+            //        {
+            //            if (word[i] == word[j])
+            //            {
+            //                counter++;
+            //                flag[j] = true;
+            //            }
+            //        }
+            //        Console.WriteLine(word[i] + " = " + counter);
+            //        counter = 1;
+            //    }
+            //}
+            #endregion
 
             #region Özüm üçün araşdırdım...
             //string word = "Code Academy";
@@ -84,9 +102,6 @@ namespace Task_4___16._05._2024
             #endregion
 
 
-
-
-            Console.ReadKey();
         }
     }
 }
